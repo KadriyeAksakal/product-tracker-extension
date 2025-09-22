@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Productivity Tracker",
+  "version": "1.0",
+  "description": "It tracks how much time you spend on each site.",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "service_worker": "service.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Productivity Tracker"
+  }
+}
