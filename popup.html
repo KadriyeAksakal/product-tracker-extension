@@ -7,7 +7,34 @@
 </head>
 <body>
   <h2>Productivity Tracker</h2>
-  <ul id="timeList"></ul>
+  
+  <!-- Input ve süre seçim alanı -->
+  <div class="input-section">
+    <input type="text" id="siteInput" placeholder="Site adını girin..." />
+    <select id="timeSelect">
+      <option value="5">5 dakika</option>
+      <option value="10">10 dakika</option>
+      <option value="15">15 dakika</option>
+      <option value="30">30 dakika</option>
+      <option value="60">1 saat</option>
+      <option value="120">2 saat</option>
+    </select>
+    <button id="addBtn">Ekle</button>
+  </div>
+  
+  <!-- Tablo şeklinde time list -->
+  <table id="timeTable">
+    <thead>
+      <tr>
+        <th>Site</th>
+        <th>Süre / Limit</th>
+        <th>İşlem</th>
+      </tr>
+    </thead>
+    <tbody id="timeList">
+    </tbody>
+  </table>
+  
   <script src="popup.js"></script>
 </body>
 </html>

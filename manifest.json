@@ -3,7 +3,8 @@
   "name": "Productivity Tracker",
   "version": "1.0",
   "description": "It tracks how much time you spend on each site.",
-  "permissions": ["tabs", "storage"],
+  "permissions": ["tabs", "storage", "notifications", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "service.js"
   },

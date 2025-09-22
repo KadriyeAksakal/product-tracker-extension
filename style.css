@@ -1,7 +1,9 @@
 body {
   font-family: Arial, sans-serif;
   padding: 10px;
-  width: 250px;
+  width: 300px;
+  background: linear-gradient(to right, #EEAECA, #94BBE9);
+  color: #000;
 }
 
 h2 {
@@ -10,6 +12,92 @@ h2 {
   text-align: center;
 }
 
+/* Input section styles */
+.input-section {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+#siteInput {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#timeSelect {
+  width: 60%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#addBtn {
+  width: 30%;
+  padding: 8px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 4%;
+}
+
+#addBtn:hover {
+  background: #45a049;
+}
+
+/* Table styles */
+#timeTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#timeTable th {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px 8px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+#timeTable td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+#timeTable tr:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.delete-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background: #da190b;
+}
+
 ul {
   padding-left: 15px;
+}
+
+li {
+  padding: 5px 2px;
+  border-bottom: solid 0.5px #000;
 }
